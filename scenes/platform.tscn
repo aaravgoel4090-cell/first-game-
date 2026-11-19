@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cobawklqictge"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v4t87"]
+load_path = "res://.godot/imported/platforms.png-3869606db457611ed4193d705dc364e4.ctex"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8krro"]
+radius = 4.0
+height = 32.0
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=815238654]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=843468884]
+texture = SubResource("CompressedTexture2D_v4t87")
+region_enabled = true
+region_rect = Rect2(16, 0, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1683951798]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_8krro")
+one_way_collision = true
+one_way_collision_direction = Vector2(1, 0)
